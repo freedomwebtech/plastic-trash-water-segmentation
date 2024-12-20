@@ -32,7 +32,7 @@ while True:
 
     frame = cv2.resize(frame, (1020, 500))
     
-    # Run YOLOv8 tracking on the frame, persisting tracks between frames
+    # Run YOLOv11 tracking on the frame, persisting tracks between frames
     results = model.track(frame, persist=True)
     
     # Ensure boxes exist in the results
